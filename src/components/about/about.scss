@@ -1,0 +1,53 @@
+.outerBox {
+
+    margin: 100px;
+
+    h1 {
+        text-align: center;
+        font-size: 100px;
+        color: orange;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 60px;
+        }
+    }
+
+    p {
+        width: 60vw;
+        font-size: 25px;
+        text-align: justify;
+        margin: 50px auto;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 18px;
+        }
+    }
+
+    .cardContainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+        .container {
+            border: 1px solid yellow;
+            border-radius: 30px;
+            width: 150px;
+            height: 150px;
+            background: white;
+            border-radius: 30px;
+
+            img {
+                width: 100%;
+                border-radius: 30px;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 1000px) {
+        .cardContainer {
+            display: none;
+        }
+    }
+}
